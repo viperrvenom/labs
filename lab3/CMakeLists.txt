@@ -11,5 +11,5 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 set(CMAKE_CXX_STANDARD_REQUIRED TRUE)
 
 # Сказать программе, что должен быть исполняемый файл
-add_executable("${PROJECT_NAME}" main.cpp
-        ../lab3/lab3.cpp)
+add_executable("${PROJECT_NAME}" lab3.cpp
+        lab3.cpp)
