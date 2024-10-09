@@ -33,3 +33,5 @@
 *.DS_Store
 *.app
 *.idea
+.idea
+lab2/main.dSYM
