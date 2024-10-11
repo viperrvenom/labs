@@ -1,7 +1,9 @@
 #include <iostream>
 
 int main() {
-    int A, B, C;
+    int A;
+    int B;
+    int C;
     std::cout << "Введите натуральные числа A, B и C: ";
     std::cin >> A >> B >> C;
 
