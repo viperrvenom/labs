@@ -41,7 +41,7 @@ int main() {
     }
 
     int x;
-    std::cout << "Введитеx (-1 либо 1): ";
+    std::cout << "Введите x (-1 либо 1): ";
     std::cin >> x;
 
     if (x == -1) {
