@@ -1,8 +1,0 @@
-[
-{
-  "directory": "/Users/rolanshvetsov/Desktop/git/labs/build",
-  "command": "/usr/bin/clang++   -g -std=c++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -o CMakeFiles/example.dir/lab4.cpp.o -c /Users/rolanshvetsov/Desktop/git/labs/lab4/lab4.cpp",
-  "file": "/Users/rolanshvetsov/Desktop/git/labs/lab4/lab4.cpp",
-  "output": "CMakeFiles/example.dir/lab4.cpp.o"
-}
-]
