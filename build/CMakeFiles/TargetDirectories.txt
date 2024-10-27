@@ -1,0 +1,3 @@
+/Users/rolanshvetsov/Desktop/git/labs/build/CMakeFiles/example.dir
+/Users/rolanshvetsov/Desktop/git/labs/build/CMakeFiles/edit_cache.dir
+/Users/rolanshvetsov/Desktop/git/labs/build/CMakeFiles/rebuild_cache.dir
