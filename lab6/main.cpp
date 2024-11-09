@@ -93,7 +93,7 @@ int main()
     {
         matrix[maxRowIndex][j] = 9999;
     }
-    
+
     std::cout << "Изменённая матрица: " << std::endl;
     for (const auto& row : matrix)
     {
@@ -130,19 +130,18 @@ int main()
 
         int lastDigit = num % 10;
 
-        if (firstDigit != lastDigit)
+        bool isFirstDigitDifferent = (firstDigit != lastDigit);
+
+        if (isFirstDigitDifferent)
         {
-            if (std::find(filteredNumbers.begin(), filteredNumbers.end(),
-                num) == filteredNumbers.end())
+            if (std::find(filteredNumbers.begin(), filteredNumbers.end(), num) == filteredNumbers.end())
             {
                 filteredNumbers.push_back(num);
             }
-            if (firstDigit == 3) {
-                if (std::find(filteredNumbers.begin(), filteredNumbers.end(),
-                    num) == filteredNumbers.end())
-                {
-                    filteredNumbers.push_back(num);
-                }
+
+            if (firstDigit == 3)
+            {
+                filteredNumbers.push_back(num);
             }
         }
     }
