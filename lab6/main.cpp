@@ -39,7 +39,6 @@ int main()
         }
     }
 
-    // Если нет чисел с суммой цифр 19, сортируем по убыванию
     if (!foundSum19)
     {
         std::sort(numbers.rbegin(), numbers.rend());
@@ -52,7 +51,7 @@ int main()
     }
     std::cout << std::endl;
 
-    // матрица
+
     int rows, cols;
     std::cout << "Введите размеры матрицы (не более 100): ";
     std::cin >> rows >> cols;
@@ -76,7 +75,6 @@ int main()
     int maxRowIndex = 0;
     int maxRowSum = 0;
 
-    // Поиск строки с максимальной абс. суммой
     for (int i = 0; i < rows; ++i)
     {
         int currentRowSum = 0;
@@ -91,7 +89,6 @@ int main()
         }
     }
 
-    // Замена элементов найденной строки на 9999
     for (int j = 0; j < cols; ++j)
     {
         matrix[maxRowIndex][j] = 9999;
@@ -107,7 +104,7 @@ int main()
         std::cout << std::endl;
     }
 
-    // Фильтрация натуральных чисел
+
     std::cout << "Введите количество натуральных чисел для фильтрации (не более 10000): ";
     std::cin >> count;
 
@@ -128,7 +125,6 @@ int main()
 
     for (int num : numbers)
     {
-        // Удаляем числа, начинающиеся и заканчивающиеся одной и той же цифрой
         int firstDigit = num;
         while (firstDigit >= 10) firstDigit /= 10;
 
@@ -136,13 +132,11 @@ int main()
 
         if (firstDigit != lastDigit)
         {
-            // Проверка на уникальность перед добавлением
             if (std::find(filteredNumbers.begin(), filteredNumbers.end(),
                 num) == filteredNumbers.end())
             {
                 filteredNumbers.push_back(num);
             }
-            // Дублируем числа, начинающиеся цифрой 3
             if (firstDigit == 3) {
                 if (std::find(filteredNumbers.begin(), filteredNumbers.end(),
                     num) == filteredNumbers.end())
